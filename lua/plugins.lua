@@ -35,6 +35,7 @@ return require('packer').startup(function()
     use { 'akinsho/bufferline.nvim', tag = "*", requires = 'kyazdani42/nvim-web-devicons' }
     use "onsails/lspkind.nvim"
     use 'numToStr/Comment.nvim'
+    use 'nvim-tree/nvim-web-devicons'
     use {
         "max397574/better-escape.nvim",
         config = function()
