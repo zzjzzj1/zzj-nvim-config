@@ -59,7 +59,7 @@ vim.o.timeoutlen = 300
 vim.o.splitbelow = true
 vim.o.splitright = true
 -- 不可见字符的显示，这里只把空格显示为一个点
-vim.o.list = false
+vim.o.list = true
 vim.o.listchars = "space:·"
 vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.pumheight = 10
