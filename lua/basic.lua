@@ -7,7 +7,7 @@ vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
 -- 使用相对行号
 vim.wo.number = true
-vim.wo.relativenumber = false
+vim.wo.relativenumber = true
 -- 高亮所在行
 vim.wo.cursorline = true
 -- 缩进4个空格等于一个Tab
@@ -66,3 +66,11 @@ vim.o.pumheight = 10
 -- always show tabline
 vim.o.showtabline = 2
 vim.cmd(':hi NonText guifg=bg')
+vim.cmd('hi SignColumn guibg=bg')
+vim.cmd('hi GruvboxYellowSign guibg=bg')
+vim.cmd('hi GruvboxRedSign guibg=bg')
+vim.cmd('hi GruvboxGreenSign guibg=bg')
+vim.cmd('hi GruvboxAquaSign guibg=bg')
+vim.cmd('hi GruvboxBlueSign guibg=bg')
+vim.cmd('hi GruvboxOrangeSign guibg=bg')
+vim.cmd('hi GruvboxPurpleSign guibg=bg')
