@@ -65,7 +65,7 @@ vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.pumheight = 10
 -- always show tabline
 vim.o.showtabline = 2
-vim.cmd(':hi NonText guifg=bg')
+vim.cmd('hi NonText guifg=bg')
 vim.cmd('hi SignColumn guibg=bg')
 vim.cmd('hi GruvboxYellowSign guibg=bg')
 vim.cmd('hi GruvboxRedSign guibg=bg')
