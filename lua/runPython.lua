@@ -10,7 +10,6 @@ vim.api.nvim_create_user_command(
         vim.api.nvim_feedkeys('python ', 'n', false)
         vim.api.nvim_feedkeys(data, 'n', false)
         vim.api.nvim_feedkeys(enter, 'n', false)
-        vim.api.nvim_feedkeys('exit', 'n', false)
   end,
   {}
 )

@@ -5,14 +5,14 @@ lspconfig.pylsp.setup {}
 lspconfig.tsserver.setup {}
 
 local function on_language_status(_, result)
-  -- Ignore nil messages.
-  if result.message == nil then
-      return
-  end
-  local command = vim.api.nvim_command
-  command 'echohl ModeMsg'
-  command(string.format('echo "%s"', result.message))
-  command 'echohl None'
+    -- Ignore nil messages.
+    if result.message == nil then
+        return
+    end
+    local command = vim.api.nvim_command
+    command 'echohl ModeMsg'
+    command(string.format('echo "%s"', result.message))
+    command 'echohl None'
 end
 lspconfig.jdtls.setup({
     handlers = {
@@ -20,9 +20,41 @@ lspconfig.jdtls.setup({
     },
 })
 
-lspconfig.lua_ls.setup{}
+lspconfig.lua_ls.setup {}
 lspconfig.eslint.setup {}
+lspconfig.clangd.setup {}
+local sign = function(opts)
+    vim.fn.sign_define(opts.name, {
+        texthl = opts.name,
+        text = opts.text,
+        numhl = "",
+    })
+end
+sign({ name = "DiagnosticSignError", text = "✘" })
+sign({ name = "DiagnosticSignWarn", text = "▲" })
+sign({ name = "DiagnosticSignHint", text = "⚑" })
+sign({ name = "DiagnosticSignInfo", text = "" })
 
+--Another suit of icon
+--sign({ name = "DiagnosticSignError", text = "" })
+--sign({ name = "DiagnosticSignWarn", text = "" })
+--sign({ name = "DiagnosticSignHint", text = "" })
+--sign({ name = "DiagnosticSignInfo", text = "" })
+
+vim.diagnostic.config({
+    --virtual_text = true,
+    virtual_text = false,
+    severity_sort = true,
+    signs = true,
+    update_in_insert = false,
+    underline = false,
+    float = {
+        border = "rounded",
+        source = "always",
+        header = "",
+        prefix = "",
+    },
+})
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
