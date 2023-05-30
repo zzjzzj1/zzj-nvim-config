@@ -1,20 +1,19 @@
-function stripfilename(filename)  
-    return string.match(filename, "(.+)/[^/]*%.%w+$") --*nix system  
-end  
+local function stripfilename(filename)
+    return string.match(filename, "(.+)/[^/]*%.%w+$") --*nix system
+end
 
-function strippath(filename)  
-    return string.match(filename, ".+/([^/]*%.%w+)$") -- *nix system  
-end  
+local function strippath(filename)
+    return string.match(filename, ".+/([^/]*%.%w+)$") -- *nix system
+end
 
-function stripextension(filename)  
-    local idx = filename:match(".+()%.%w+$")  
-    if(idx) then  
-        return filename:sub(1, idx-1)  
-    else  
-        return filename  
-    end  
-end  
-
+local function stripextension(filename)
+    local idx = filename:match(".+()%.%w+$")
+    if (idx) then
+        return filename:sub(1, idx - 1)
+    else
+        return filename
+    end
+end
 
 vim.api.nvim_create_user_command(
     'JavaRun',

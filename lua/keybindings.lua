@@ -6,7 +6,7 @@ vim.keymap.set('n', '<space>t', ':FloatermNew<CR>', opt)
 -- telescope config
 local telescopeBuiltin = require('telescope.builtin')
 vim.keymap.set('n', '<space>ff', telescopeBuiltin.find_files, {})
-vim.keymap.set('n', 'f<space>', telescopeBuiltin.live_grep, {})
+vim.keymap.set('n', '<space>fg', telescopeBuiltin.live_grep, {})
 vim.keymap.set('n', 'gr', telescopeBuiltin.lsp_references, {})
 -- buffer line pick config
 vim.keymap.set('n', '<space>b', ':BufferLinePick<CR>', opt)
