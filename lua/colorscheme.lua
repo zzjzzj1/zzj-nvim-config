@@ -4,3 +4,4 @@ if not status_ok then
     vim.notify("colorscheme " .. colorscheme .. " not Found")
     return
 end
+vim.o.background = 'dark'

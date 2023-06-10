@@ -3,7 +3,8 @@ require 'nvim-treesitter.configs'.setup {
     -- :TSInstallInfo 命令查看支持的语言
     ensure_installed = {
         "go", "python", "vim", "lua", "haskell", "rust",
-        "json", "html", "css", "javascript", "bash", "markdown", "java"
+        "json", "html", "css", "javascript", "bash", "markdown", "java",
+        "tsx", "typescript"
     },
     -- 启用代码高亮功能
     highlight = {
@@ -23,6 +24,9 @@ require 'nvim-treesitter.configs'.setup {
     -- 启用基于Treesitter的代码格式化(=) . NOTE: This is an experimental feature.
     indent = {
         enable = true
+    },
+    autotag = {
+        enable = true,
     }
 }
 -- 开启 Folding

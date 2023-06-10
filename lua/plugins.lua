@@ -32,6 +32,7 @@ return require('packer').startup(function()
     use 'voldikss/vim-floaterm'
     use 'nvim-lualine/lualine.nvim'
     use "windwp/nvim-autopairs"
+    use "windwp/nvim-ts-autotag"
     use { 'akinsho/bufferline.nvim', tag = "*", requires = 'kyazdani42/nvim-web-devicons' }
     use "onsails/lspkind.nvim"
     use 'numToStr/Comment.nvim'
