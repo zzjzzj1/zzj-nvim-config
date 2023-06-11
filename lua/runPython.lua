@@ -5,7 +5,7 @@ vim.api.nvim_create_user_command(
         enter = vim.api.nvim_replace_termcodes("<CR>", true, false, true)
         vim.api.nvim_feedkeys(":w", 'n', false)
         vim.api.nvim_feedkeys(enter, 'n', false)
-        vim.api.nvim_feedkeys(":FloatermNew", 'n', false)
+        vim.api.nvim_feedkeys(":ToggleTerm", 'n', false)
         vim.api.nvim_feedkeys(enter, 'n', false)
         vim.api.nvim_feedkeys('python ', 'n', false)
         vim.api.nvim_feedkeys(data, 'n', false)

@@ -22,7 +22,7 @@ vim.api.nvim_create_user_command(
         enter = vim.api.nvim_replace_termcodes("<CR>", true, false, true)
         vim.api.nvim_feedkeys(":w", 'n', false)
         vim.api.nvim_feedkeys(enter, 'n', false)
-        vim.api.nvim_feedkeys(":FloatermNew", 'n', false)
+        vim.api.nvim_feedkeys(":ToggleTerm", 'n', false)
         vim.api.nvim_feedkeys(enter, 'n', false)
         local path = stripfilename(content)
         local fileName = strippath(content)
@@ -39,7 +39,7 @@ vim.api.nvim_create_user_command(
     'GradleRunBoot',
     function(input)
         enter = vim.api.nvim_replace_termcodes("<CR>", true, false, true)
-        vim.api.nvim_feedkeys(":FloatermNew", 'n', false)
+        vim.api.nvim_feedkeys(":ToggleTerm", 'n', false)
         vim.api.nvim_feedkeys(enter, 'n', false)
         vim.api.nvim_feedkeys('gradle bootRun' .. enter, 'n', false)
     end,
@@ -50,7 +50,7 @@ vim.api.nvim_create_user_command(
     'MavenRunBoot',
     function(input)
         enter = vim.api.nvim_replace_termcodes("<CR>", true, false, true)
-        vim.api.nvim_feedkeys(":FloatermNew", 'n', false)
+        vim.api.nvim_feedkeys(":ToggleTerm", 'n', false)
         vim.api.nvim_feedkeys(enter, 'n', false)
         vim.api.nvim_feedkeys('mvn spring-boot:run' .. enter, 'n', false)
     end,

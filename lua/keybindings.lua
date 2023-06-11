@@ -2,7 +2,7 @@ vim.keymap.set('n', '<A-m>', ':NvimTreeToggle<CR>', opt)
 -- window pick config
 vim.keymap.set('n', '<space>w', '<C-w>w', opt)
 -- floaterm config
-vim.keymap.set('n', '<space>t', ':FloatermNew<CR>', opt)
+vim.keymap.set('n', '<space>t', ':ToggleTerm direction=float<CR>', opt)
 -- telescope config
 local telescopeBuiltin = require('telescope.builtin')
 vim.keymap.set('n', '<space>ff', telescopeBuiltin.find_files, {})

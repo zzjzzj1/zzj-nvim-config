@@ -29,7 +29,6 @@ return require('packer').startup(function()
     -- vsnip
     use 'hrsh7th/cmp-vsnip' -- { name = 'vsnip' }
     use 'hrsh7th/vim-vsnip'
-    use 'voldikss/vim-floaterm'
     use 'nvim-lualine/lualine.nvim'
     use "windwp/nvim-autopairs"
     use "windwp/nvim-ts-autotag"
@@ -68,4 +67,5 @@ return require('packer').startup(function()
         'lewis6991/gitsigns.nvim',
         -- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
     }
+    use { "akinsho/toggleterm.nvim", tag = '*'}
 end)
