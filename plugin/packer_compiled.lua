@@ -123,6 +123,11 @@ _G.packer_plugins = {
     path = "/home/zzj/.local/share/nvim/site/pack/packer/opt/dashboard-nvim",
     url = "https://github.com/glepnir/dashboard-nvim"
   },
+  ["dressing.nvim"] = {
+    loaded = true,
+    path = "/home/zzj/.local/share/nvim/site/pack/packer/start/dressing.nvim",
+    url = "https://github.com/stevearc/dressing.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/zzj/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -212,6 +217,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/zzj/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/home/zzj/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
   },
   ["vim-vsnip"] = {
     loaded = true,
