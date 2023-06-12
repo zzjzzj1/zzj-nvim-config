@@ -5,7 +5,6 @@ vim.keymap.set('n', '<space>w', '<C-w>w', opt)
 vim.keymap.set('n', '<space>t', ':ToggleTerm direction=float<CR>', opt)
 -- telescope config
 local telescopeBuiltin = require('telescope.builtin')
-local themesPicker = require('telescope.themes')
 vim.keymap.set('n', '<space>ff', telescopeBuiltin.find_files, {})
 vim.keymap.set('n', '<space>fg', telescopeBuiltin.live_grep, {})
 vim.keymap.set('n', 'gr', telescopeBuiltin.lsp_references, {})
